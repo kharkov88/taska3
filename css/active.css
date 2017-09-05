@@ -1,0 +1,42 @@
+*{
+    transition: ease 0s;
+}
+.title .spin{
+    display: none;
+    margin: 0 0 0 5px;
+}
+.title .spin-visible{
+    display: inline-block;
+}
+.content-main-row>.active{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.content-main-row>.active::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 70%;
+    height: 90%;
+    margin: 2% 15%;;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.active span{
+    display: block;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    font-size: 26px;
+    font-weight: bold;
+    margin: -100px 0 0 -100px;
+    z-index: 400;
+}
+.sidebar-filter .select{
+    color:red
+}
