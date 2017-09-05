@@ -1,1 +1,1 @@
-Задание в файле task.pdf
+open task.pdf
